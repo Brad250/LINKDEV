@@ -1,0 +1,87 @@
+:root {
+  --red: #dc4266;
+  --blue: #3072e6;
+  --background: #00032c;
+  --white: #fff;
+  --profile-photo-size: 120px;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: var(--background);
+  color: var(--white);
+}
+.photo-container {
+  overflow: hidden;
+  width: var(--profile-photo-size);
+  height: var(--profile-photo-size);
+  border: 4px solid #3072e6;
+  border-radius: 100%;
+}
+.profile-photo {
+  width: var(--profile-photo-size);
+}
+header {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+h1,
+p,
+button {
+  margin: 0;
+}
+i {
+  font-size: 24px;
+}
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+h1 {
+  color: var(--red);
+  font-size: 24px;
+  margin-top: 15px;
+}
+ocupation {
+  margin-top: 5px;
+}
+.link {
+  max-width: 270px;
+  background: var(--red);
+  width: 100%;
+  text-decoration: none;
+  color: var(--white);
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 250ms;
+}
+.link:fist-child {
+  margin-top: 0;
+}
+.link:hover {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+}
+.link:i {
+  margin-right: 7px;
+}
+.call-me {
+  text-align: center;
+}
